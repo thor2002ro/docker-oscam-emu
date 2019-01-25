@@ -9,7 +9,7 @@ LABEL maintainer="saarg"
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
-	bzr \
+	git \
 	curl \
 	gcc \
 	g++ \
