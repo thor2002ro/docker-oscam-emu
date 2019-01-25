@@ -28,10 +28,8 @@ RUN \
 	pcsc-lite \
 	pcsc-lite-libs && \
  echo "**** compile oscam ****" && \
- git clone http://repo.or.cz/oscam.git /tmp/oscam-svn && \
- git clone https://github.com/oscam-emu/oscam-emu.git /tmp/oscam-emu && \
- cd /tmp/oscam-svn && \
- patch -p0 < /tmp/oscam-emu/oscam-emu.patch && \
+ git clone https://github.com/oscam-emu/oscam-patched.git /tmp/oscam-emu && \
+ cd /tmp/oscam-emu && \
  ./config.sh \
 	--enable all \
 	--disable \
