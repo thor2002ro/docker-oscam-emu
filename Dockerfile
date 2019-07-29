@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.7
+FROM lsiobase/alpine:latest
 
 # set version label
 ARG BUILD_DATE
